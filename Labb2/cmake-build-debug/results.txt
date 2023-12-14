@@ -1,0 +1,88 @@
+Type: Quick Sort
+Sorting: Random Integers
+ID: 200000
+Mean Value: 0.8
+Sum: 4
+Standard Deviation: 0.424264
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 220000
+Mean Value: 0.8
+Sum: 4
+Standard Deviation: 0.424264
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 240000
+Mean Value: 1
+Sum: 5
+Standard Deviation: 0
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 260000
+Mean Value: 1
+Sum: 5
+Standard Deviation: 0
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 280000
+Mean Value: 1.2
+Sum: 6
+Standard Deviation: 0.173205
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 300000
+Mean Value: 1.2
+Sum: 6
+Standard Deviation: 0.173205
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 320000
+Mean Value: 2
+Sum: 10
+Standard Deviation: 0.5
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 340000
+Mean Value: 1.4
+Sum: 7
+Standard Deviation: 0.412311
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 360000
+Mean Value: 1
+Sum: 5
+Standard Deviation: 0
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 380000
+Mean Value: 2.4
+Sum: 12
+Standard Deviation: 0.469042
+Samples: 5
+
+Type: Quick Sort
+Sorting: Random Integers
+ID: 400000
+Mean Value: 1
+Sum: 5
+Standard Deviation: 0
+Samples: 5
+
