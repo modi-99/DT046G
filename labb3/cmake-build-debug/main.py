@@ -1,5 +1,4 @@
-import matplotlib.pyplot as p 
-import numpy as np 
+import matplotlib.pyplot as p
 
 mean_values = []
 std_devs = []
@@ -13,7 +12,7 @@ with open("cmake-build-debug\data.txt") as file:
     for line in file:
         line = line.strip()
         if line.startswith("ID:"):
-            current_id = int(line.split(":")[1].strip())
+            current_id = float(line.split(":")[1].strip())
         elif line.startswith("Mean Value:"):
             current_mean = float(line.split(":")[1].strip())
         elif line.startswith("Standard Deviation:"):
@@ -29,19 +28,13 @@ with open("cmake-build-debug\data.txt") as file:
             current_mean = None
             current_std_dev = None
 
-# Print the extracted data
-#for i in range(len(ids)):
-    #print(f"ID: {ids[i]}, Mean Value: {mean_values[i]}, Standard Deviation: {std_devs[i]}")
-
+# Your plotting code remains unchanged
 p.yscale('linear')
 p.xlabel('N')
 p.ylabel('time/s')
 p.errorbar(ids,mean_values,yerr=std_devs, linestyle='None', marker='.', label="std_dev")
-p.title("QuickMOT -- Inc")
-
-p.plot(ids,mean_values,label="O(Nlog(N))")
-
+p.title("Hash table")
+p.plot(ids,mean_values,label="O(1)")
 p.legend()
-
 p.show()
 

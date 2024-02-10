@@ -1,0 +1,40 @@
+ID: 2000
+Mean Value: 8.054e-05
+Standard Deviation: 1.15334e-06
+
+ID: 4000
+Mean Value: 0.0001748
+Standard Deviation: 2.74818e-06
+
+ID: 6000
+Mean Value: 0.0002926
+Standard Deviation: 3.77492e-06
+
+ID: 8000
+Mean Value: 0.00036618
+Standard Deviation: 9.33525e-06
+
+ID: 10000
+Mean Value: 0.0004549
+Standard Deviation: 3.22374e-06
+
+ID: 12000
+Mean Value: 0.00059584
+Standard Deviation: 2.33799e-06
+
+ID: 14000
+Mean Value: 0.00066842
+Standard Deviation: 2.46066e-05
+
+ID: 16000
+Mean Value: 0.00079526
+Standard Deviation: 1.76694e-05
+
+ID: 18000
+Mean Value: 0.0009194
+Standard Deviation: 2.61298e-05
+
+ID: 20000
+Mean Value: 0.0010004
+Standard Deviation: 5.70738e-05
+

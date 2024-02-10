@@ -10,16 +10,26 @@
 #include "QuickSort.h"
 #include <fstream>
 
-
+/**
+ * @brief this is a struct for results.
+ * @param Id The first element.
+ * @param meanValue The second element.
+ * @return doesnt have any return value.
+ */
 struct Result {
-    double id;         // Assuming you want to print "i" from your loop
+    double id;
     double meanValue;
     double sum;
     double stdDev;
-    double samples; // Assuming you want to print the last element of the row
+    double samples;
 
 };
 
+/**
+ * @brief This function adds two integers.
+ * @param measurements hold different time point for a sorting algorithms.
+ * @return return a vector filled with desired results.
+ */
 std::vector<Result> meanValueAndSum(const std::vector<std::vector<double>> &measurements) {
     std::vector<Result> resultVector;
 
@@ -43,6 +53,11 @@ std::vector<Result> meanValueAndSum(const std::vector<std::vector<double>> &meas
     return resultVector;
 }
 
+/**
+ * @brief This function creates a file a reads in data .
+ * @param measurements hold different time point for a sorting algorithms.
+ * @param filename is a filename.
+ */
 void writeResultsToFile(const std::vector<Result> &resultVector, const std::string &filename) {
     // Open the file for writing
     std::ofstream outputFile(filename);
@@ -55,13 +70,13 @@ void writeResultsToFile(const std::vector<Result> &resultVector, const std::stri
 
     // Write results to the file
     for (const auto &element: resultVector) {
-        outputFile << "Type: " << "Quick Sort" << std::endl;
-        outputFile << "Sorting: " << "Random Integers" << std::endl;
+        //outputFile << "Type: " << "Quick Sort" << std::endl;
+        //outputFile << "Sorting: " << "Random Integers" << std::endl;
         outputFile << "ID: " << element.id << std::endl;
         outputFile << "Mean Value: " << element.meanValue << std::endl;
-        outputFile << "Sum: " << element.sum << std::endl;
+        //outputFile << "Sum: " << element.sum << std::endl;
         outputFile << "Standard Deviation: " << element.stdDev << std::endl;
-        outputFile << "Samples: " << element.samples << std::endl;
+        //outputFile << "Samples: " << element.samples << std::endl;
         outputFile << std::endl;
     }
 
@@ -76,9 +91,8 @@ int main() {
     std::vector<std::vector<double>> timePoint;
 
     int samples = 5;
-    int end = 400000;
-    int N = 200000;
-
+    int end = 20000;
+    int N = 2000;
     int test = 0;
 
 
@@ -89,24 +103,23 @@ int main() {
         for (int i = 1; i <= samples; ++i) {
             DataGenerate data = DataGenerate(N);
             auto start = std::chrono::high_resolution_clock::now();
-            //SelectionSort(data.randomGeneratedNumbers);
-            InsertionSort(data.constantNumber);
-            //QuickSortMOT(data.randomGeneratedNumbers);
+            //SelectionSort(data.monoIncreasedNumbers);
+            //InsertionSort(data.randomGeneratedNumbers);
+            QuickSortMOT(data.monoIncreasedNumbers);
             //QuickSort(data.randomGeneratedNumbers);
             auto end = std::chrono::high_resolution_clock::now();
-            auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+            auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
             tempVec.push_back(duration.count());
         }
         timePoint.push_back(tempVec);
-        N += 20000;
+        N += 2000;
     }
-
 
     std::vector<Result> resultVector = meanValueAndSum(timePoint);
 
-    std::string filename = "results.txt";
+    std::string filename = "data.txt";
 
-    // Call the function to write results to the file
+    // function to write results to the file
     writeResultsToFile(resultVector, filename);
 
     for (auto element: resultVector) {

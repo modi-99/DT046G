@@ -1,88 +1,80 @@
 Type: Quick Sort
 Sorting: Random Integers
-ID: 200000
-Mean Value: 0.8
-Sum: 4
-Standard Deviation: 0.424264
+ID: 2000
+Mean Value: 6.66e-06
+Sum: 3.33e-05
+Standard Deviation: 7.87401e-08
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 220000
-Mean Value: 0.8
-Sum: 4
-Standard Deviation: 0.424264
-Samples: 5
-
-Type: Quick Sort
-Sorting: Random Integers
-ID: 240000
-Mean Value: 1
-Sum: 5
+ID: 4000
+Mean Value: 1.32e-05
+Sum: 6.6e-05
 Standard Deviation: 0
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 260000
-Mean Value: 1
-Sum: 5
-Standard Deviation: 0
+ID: 6000
+Mean Value: 2.014e-05
+Sum: 0.0001007
+Standard Deviation: 2.14942e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 280000
-Mean Value: 1.2
-Sum: 6
-Standard Deviation: 0.173205
+ID: 8000
+Mean Value: 2.656e-05
+Sum: 0.0001328
+Standard Deviation: 5.19808e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 300000
-Mean Value: 1.2
-Sum: 6
-Standard Deviation: 0.173205
+ID: 10000
+Mean Value: 3.378e-05
+Sum: 0.0001689
+Standard Deviation: 8.5047e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 320000
-Mean Value: 2
-Sum: 10
-Standard Deviation: 0.5
+ID: 12000
+Mean Value: 4.056e-05
+Sum: 0.0002028
+Standard Deviation: 1.47309e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 340000
-Mean Value: 1.4
-Sum: 7
-Standard Deviation: 0.412311
+ID: 14000
+Mean Value: 4.752e-05
+Sum: 0.0002376
+Standard Deviation: 3.57491e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 360000
-Mean Value: 1
-Sum: 5
-Standard Deviation: 0
+ID: 16000
+Mean Value: 5.412e-05
+Sum: 0.0002706
+Standard Deviation: 4.80937e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 380000
-Mean Value: 2.4
-Sum: 12
-Standard Deviation: 0.469042
+ID: 18000
+Mean Value: 6.06e-05
+Sum: 0.000303
+Standard Deviation: 8.8459e-07
 Samples: 5
 
 Type: Quick Sort
 Sorting: Random Integers
-ID: 400000
-Mean Value: 1
-Sum: 5
-Standard Deviation: 0
+ID: 20000
+Mean Value: 6.69e-05
+Sum: 0.0003345
+Standard Deviation: 5.52268e-07
 Samples: 5
 
